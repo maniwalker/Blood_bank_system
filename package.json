@@ -1,0 +1,61 @@
+{
+  "name": "blood-bank-management",
+  "version": "1.0.0",
+  "description": "Fun little project that I am doing just for practice",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/webpack/bin/webpack --config webpack.config.dev.js --display-chunks --progress",
+    "poststart": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server --config webpack.config.dev.js",
+    "build": "node ./node_modules/webpack/bin/webpack  --config webpack.config.prod.js",
+    "test": "node ./node_modules/karma/bin/karma start",
+    "test-single": "node ./node_modules/karma/bin/karma start --single-run true",
+    "fake-api": "json-server --watch config/db.json --routes config/routes.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyiero/BloodBankProject.git"
+  },
+  "author": "Brandon Ripley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hyiero/BloodBankProject/issues"
+  },
+  "homepage": "https://github.com/Hyiero/BloodBankProject#readme",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "angular": "~1.5.9",
+    "angular-resource": "~1.5.9",
+    "angular-ui-router": "^1.0.0-beta.3",
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "angular-jsdoc": "^1.5.0",
+    "angular-mocks": "~1.5.9",
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-require": "^1.0.1",
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
+    "isparta-loader": "^2.0.0",
+    "jasmine": "^2.5.2",
+    "json-server": "^0.9.4",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.8.0",
+    "path": "^0.12.7",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}

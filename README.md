@@ -1,2 +1,2 @@
-# Blood_bank_using_Azure
-This is a repository with Blood Bank management system implemented using Azure services
+# BloodBankProject
+This is a fun project I will be working on using Angular/WebAPI and azure to do blood bank management on the web.
